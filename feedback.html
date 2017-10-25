@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>Social Media Site</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <a href="index.html"><img  class="left logo_img" src="logo.png"></a>
+            <ul class="right">
+                <a href="index.html"><li>Home  |  </li></a>
+                <a href="profile.html"><li>Profile  |  </li></a>
+                <a href="feedback.html"><li>Feedback  </li></a>
+            </ul>
+        </nav>
+        <section class="main">
+            <h2>Feedback    </h2>
+            <div class="container">
+                <table>                             
+                    <tr>
+                        <p><td  height="40px" id="label">User Name :</td></p>
+                        <td>
+                            <input type="text" name="txtUserName" id="txtUserName" size="33" class=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <p><td height="40px" id="label">Gender :</td></p>
+                        <td>
+                            <select name="cmbgender" id="cmbgender" style="width: 215px;">
+                                <option value="-1">Select</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                            </select>
+                        </td>
+                        </tr>
+                        <tr>
+                            <p><td height="40px" id="label">Email Id :</td></p>
+                            <td>
+                                <input type="text" name="EmailID" id="EmailID"size="33" onblur="valid();" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <p> <td height="40px" id="label">Contact No :</td></p>
+                            <td>
+                                <input type="text" name="txt_phone" id="txt_phone" class=""size="33" onkeyup="contact(this)" onblur="mob()"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <p><td height="40px" id="label">Enquiry :</td></p>
+                            <td>
+                                <textarea rows="10" cols="40"></textarea>
+                            </td>
+                        </tr>
+                        
+                </table>
+                <p>&nbsp;</p>
+                <a class="submit btn" href="index.html">Submit</a>
+            </div>
+    </section>
+    </body>
+</html>
